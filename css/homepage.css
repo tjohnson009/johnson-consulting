@@ -1,0 +1,187 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+ */
+
+/* CSS RESET  */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+	font-size: 20px; 
+	font-weight: 400; 
+	font-family: 'Open Sans', sans-serif;
+	box-sizing: border-box;
+	text-rendering: optimizeLegibility;
+}
+
+/* NAVBAR  */
+
+.navbar {
+	display: flex;
+	height: 10vh; 
+	/* background-color: #0487BD; */
+	background-color: #04878D;
+	align-items: center;
+}
+
+.navbar ul {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100vw; 
+	/* border: 1px solid black;	 */
+	padding: 0 1.25rem;
+}
+
+.navbar ul li {
+	/* flex: .8;  */
+	font-size: .9rem;
+	border-bottom: 3px solid transparent;
+	padding-bottom: 5px;
+	padding-left: .25rem; 
+	padding-right: .25rem; 
+	transition: border .35s, border-color .35s; 
+	/* border: 1px solid red; */
+}
+
+.navbar ul li a {
+	display: flex; 
+	text-decoration: none;
+	color: white;
+	/* justify-content: space-around; */
+	/* border: 1px solid greenyellow;  */
+}
+
+.navbar ul li:visited {
+	text-decoration: none;
+}
+
+.navbar ul li:hover, .navbar ul li:active {
+	text-decoration: none;
+	border-bottom: 3px solid #ffc600;
+}
+
+.navbar ul li:focus {
+	text-decoration: none;
+}
+
+#logo {
+	flex: .5; 
+}
+
+/* #products-services {
+	/* flex: 1.05;  */
+/* } */ 
+
+/* MAIN JUMBOTRON SLIDES  */
+
+.jumbotron {
+	width: 100vw; 
+	background-color: black;
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto; 
+	height: 90vh; 
+}
+
+.slide {
+	color: white;
+	font-weight: 200;
+	font-size: 1.5rem;
+	align-items: center;
+	justify-content: center;
+	text-transform: uppercase;
+	word-spacing: 2px;
+}
+
+.slide-potential {
+	display: flex;
+	flex: 1; 
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/journey-ice-mountain.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/* .slide-potential img {
+	width: 100%; 
+	height: auto; 
+} */
+
+.slide-craft {
+	display: flex;
+	flex: 1; 
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/team.jpg'); 
+	background-size: cover; 
+	background-repeat: no-repeat;
+}
+
+.slide-team {
+		display: flex;
+		flex: 1; 
+		background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/journey.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+}
+
+.slide-team img {
+	width: 100px; 
+}
+
+.signup-button {
+	display: flex; 
+	flex-direction: row;
+	justify-content: center;
+}
+
+/* FOOTER SECTION */
+
+.homepage-footer {
+	display: flex; 
+	background-color: #1a1a1a;
+	height: 4.5rem;
+	color: white;
+}
