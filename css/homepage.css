@@ -1,12 +1,14 @@
-/* MAIN JUMBOTRON SLIDES  */
+/* MAIN HOMEPAGE SLIDES  */
 
-.jumbotron {
+.homepage-slides {
 	width: 100vw; 
-	background-color: black;
+	background-color: #eee;
 	display: flex;
 	flex-direction: row;
 	margin: 0 auto; 
-	height: 90vh; 
+	height: 85vh; 
+	padding: .5rem 0;
+
 }
 
 .slide {
@@ -17,6 +19,8 @@
 	justify-content: center;
 	text-transform: uppercase;
 	word-spacing: 2px;
+	text-align: center;
+	margin: 0 .5rem;
 }
 
 .slide-potential {
@@ -25,35 +29,53 @@
 	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/journey-ice-mountain.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center;
 }
-
-/* .slide-potential img {
-	width: 100%; 
-	height: auto; 
-} */
 
 .slide-craft {
 	display: flex;
 	flex: 1; 
-	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/team.jpg'); 
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/carl-jorgensen-b-XlruJ1Oxo-unsplash.jpg'); 
 	background-size: cover; 
 	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0 0; 
 }
 
 .slide-team {
 		display: flex;
 		flex: 1; 
-		background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/journey.jpg');
+		background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/team.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
+		background-position: left;
 }
 
 .slide-team img {
 	width: 100px; 
 }
 
-.signup-button {
-	display: flex; 
-	flex-direction: row;
+.homepage-testimonial {
+
+}
+
+.homepage-testimonial img {
+	width: 5rem; 
+	border-radius: 50%;
+	filter: grayscale();
+}
+
+
+         /* NEXT STEPS SECTION */
+.get-started-button {
 	justify-content: center;
+	border: 1px solid lime;
+}
+
+
+		 /* GENERAL INFO SECTION  */
+		 
+.tool-logo img {
+	width: 10rem; 
+	height: auto;
 }

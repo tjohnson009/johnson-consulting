@@ -1,7 +1,7 @@
 /* COMMON ELEMENTS ACORSS SITES */
 /* link this stylesheet to all html pages */
 
-                                        /* CSS RESET  */
+		/* CSS RESET  */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -53,16 +53,17 @@ html {
 	font-family: 'Open Sans', sans-serif;
 	box-sizing: border-box;
 	text-rendering: optimizeLegibility;
+	background-color: white;
 }
 
                                         /* NAVBAR  */
 
 .navbar {
 	display: flex;
-	height: 10vh; 
-	/* background-color: #0487BD; */
-	background-color: #04878D;
+	height: 4rem; 
+	background-color: #eee;
 	align-items: center;
+	border-bottom: .1rem solid #111;
 }
 
 .navbar ul {
@@ -70,6 +71,7 @@ html {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	align-items: center;
 	width: 100vw; 
 	/* border: 1px solid black;	 */
 	padding: 0 1.25rem;
@@ -79,28 +81,28 @@ html {
 	/* flex: .8;  */
 	font-size: .9rem;
 	border-bottom: 3px solid transparent;
-	padding-bottom: 5px;
+	border-top: 0px solid transparent;
+	padding-top: .425rem; 
+	padding-bottom: .425rem;
 	padding-left: .25rem; 
 	padding-right: .25rem; 
 	transition: border .35s, border-color .35s; 
-	/* border: 1px solid red; */
 }
 
 .navbar ul li a {
 	display: flex; 
 	text-decoration: none;
-	color: white;
-	/* justify-content: space-around; */
-	/* border: 1px solid greenyellow;  */
+	color: black;
+	justify-content: space-around;
 }
 
 .navbar ul li:visited {
 	text-decoration: none;
 }
 
-.navbar ul li:hover, .navbar ul li:active {
+.navbar ul li:hover:not(:last-of-type), .navbar ul li:active:not(:last-of-type) {
 	text-decoration: none;
-	border-bottom: 3px solid #ffc600;
+	border-bottom: 3px solid var(--yellow);
 }
 
 .navbar ul li:focus {
@@ -108,29 +110,91 @@ html {
 }
 
 #logo {
-    flex: .5; 
+    /* flex: .5;  */
     background-image: url('/Users/silentrunner9/Desktop/coding/all works/websites:apps/johnson-consulting/img/mountain-black-side-CLEAR.png');
     background-size: cover;
-    background-repeat: no-repeat;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	padding: 0 2rem;
+	margin-top: -1.3rem;
 }
 
-#logo a img {
-    width: 150px; 
+#logo img {
+    width: 300px; 
     display: flex;
     align-content: center;
-    flex-wrap: wrap;
+	flex-wrap: wrap;
+	height: auto; 
+}
+
+
+#get-started li {
+	border-bottom: none;
+	transition: border .35s; 
+}
+
+#get-started a:visited, #get-started a:link {
+	border: 3px solid var(--yellow); 
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	padding-bottom: .425rem;
+	padding-top: .425rem; 
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem;
+	border-bottom-left-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+}
+
+
+	 /* REUSABLE ELEMENTS  */
+.site-section {
+	width: 95vw; 
+	margin: 0 auto; 
+	border: 1px solid red; 
+}
+
+:root {
+	--yellow: #ffc600;
+	--navbar-black: #111; 
 }
 
                             /* FOOTER SECTION */
 
+
+
 .homepage-footer {
     display: flex; 
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
-    align-content: space-evenly;
     flex-wrap: wrap;
-	background-color: #777;
-	height: 4.5rem;
-    color: white;
+	align-content: center;
+	align-items: center;
+	background-color: #6f6f6f;
+	height: 4.5rem; 
+    color: var(--navbar-black); 
     font-size: .75rem;
-}                      
+}   
+
+.social-media {
+	border: 1px solid red; 
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 8rem; 
+}
+
+footer a ion-icon {
+	font-size: 1.25rem; 
+	padding: .5rem; 
+	/* color: var(--navbar-black);  */
+	transition: color .2s;
+}
+
+footer a:link, footer a:visited {
+	font-size: 1.25rem; 
+}
+
+footer a:hover, footer a:active {
+	font-size: 1.25rem; 
+	color: var(--yellow); 
+}

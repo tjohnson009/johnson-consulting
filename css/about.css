@@ -1,0 +1,27 @@
+.testimonials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.testimonials div {
+    width: 25vw;
+}
+
+.testimonials div img {
+    width: 8rem; 
+    border-radius: 50%;
+}
+
+/* ABOUT SECTION  */
+
+.about-bio {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid var(--navbar-black); 
+}
+
+.about-picture img {
+    width: 20rem; 
+    height: auto; 
+}
