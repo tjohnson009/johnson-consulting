@@ -150,7 +150,7 @@ html {
 .site-section {
 	width: 95vw; 
 	margin: 0 auto; 
-	border: 1px solid red; 
+	border: 1px solid var(--navbar-black); 
 }
 
 :root {

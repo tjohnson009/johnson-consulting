@@ -1,13 +1,12 @@
 window.addEventListener('DOMContentLoaded', (event) => {
     console.log('All items loaded.'); 
-
-    let squares = Array.from(document.querySelectorAll('.service-picture')); 
-    console.log(squares); 
-
-    squares.forEach(el => { 
-        document.querySelector(`.${el.className}`).style.backgroundColor = "#ff567f"; 
+function populateSquares() {
+    let squares2 = Array.from(document.querySelectorAll('.service-picture')); 
+    squares2.forEach(el => { 
+        el.style.backgroundColor = 'green'; 
     });
-
+};
+populateSquares(); 
 
 // }; 
 }); 
