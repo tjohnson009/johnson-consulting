@@ -18,10 +18,15 @@
 .about-bio {
     display: flex;
     flex-direction: row;
-    border-bottom: 1px solid var(--navbar-black); 
+    align-items: center;
 }
 
 .about-picture img {
     width: 20rem; 
     height: auto; 
+    padding: 3%; 
+}
+
+.EQ-Span {
+    display: inline-block;
 }
