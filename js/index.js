@@ -98,8 +98,28 @@ const renderFavicon = () => {
 
 // }
 
-// INVOKING THESE FUNCTIONS
+function indentParagraphs() {
+  let p = Array.from(document.querySelectorAll('p')); 
 
+    p.forEach(el => {
+      el.classList.add('indent'); 
+    })
+}
+
+// INVOKING THESE FUNCTIONS
 insertNav(); 
 insertFooter(); 
 renderFavicon();
+indentParagraphs(); 
+
+function insertElement(identifier, html) {
+  
+  document
+  .querySelector(`#${identifier}`)
+  .insertAdjacentHTML(
+    "beforebegin", html);
+  }; 
+  insertElement(
+    `first-p`,
+    `<div class='generic-title-div' id='about-page-title'><h2 class="generic-title">A Little About Our Founder</h2></div>`
+  );

@@ -32,18 +32,16 @@ let testimonialsArray = [];
 function Testimonial(name, text, pictureName) {
     this.name = name; 
     this.pictureURL = `../img/people/${String.raw`${pictureName}`}`;
-    this.text = `<div><p>${text} - ${this.name}<img src=${this.pictureURL} alt=${this.name} /></p></div>`; 
+    this.text = `<div class='testimonial-block'><p>${text} - ${this.name}<hr><img class='' src=${this.pictureURL} alt=${this.name} /></p></div>`; 
     
     testimonialsArray.push(this); 
 }; 
 
 function renderTestimonials() {
-   
     for (let obj of testimonialsArray) {
         let testimonialsDiv = document.querySelector(".testimonials"); 
         testimonialsDiv.insertAdjacentHTML('beforeend', obj.text); 
     }
-
 }; 
 
 function getTestimonials(obj) { //gets up to date data from testimonials data array
