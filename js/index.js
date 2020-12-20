@@ -29,7 +29,7 @@ function insertNav() {
 
       const main = document.querySelector('main'); 
     //   console.log(main); //checks that the proper element was selected
-      main.insertAdjacentHTML('afterbegin', navHTML); 
+      main.insertAdjacentHTML('beforebegin', navHTML); 
 
 };
 
@@ -76,10 +76,6 @@ function insertFooter() {
     
 }; 
 
-// function fillTestimonials() {
-
-// }; 
-
 const renderFavicon = () => {
   const favIconHTML = `<link rel="icon" type="image/jpg" href="../img/favicon/mountain-blue-side-CLEAR  mtn-only.png" size=32x32>;`; 
 
@@ -104,22 +100,20 @@ function indentParagraphs() {
     p.forEach(el => {
       el.classList.add('indent'); 
     })
-}
+}; 
+
+function insertElement(IAHPlacement, identifier, html) {
+  document
+    .querySelector(`#${identifier}`)
+    .insertAdjacentHTML(IAHPlacement, html);
+}; 
 
 // INVOKING THESE FUNCTIONS
+
 insertNav(); 
 insertFooter(); 
 renderFavicon();
 indentParagraphs(); 
 
-function insertElement(identifier, html) {
-  
-  document
-  .querySelector(`#${identifier}`)
-  .insertAdjacentHTML(
-    "beforebegin", html);
-  }; 
-  insertElement(
-    `first-p`,
-    `<div class='generic-title-div' id='about-page-title'><h2 class="generic-title">A Little About Our Founder</h2></div>`
-  );
+
+// addGreyBackgrounds(greyBackgroundElementIDs); z

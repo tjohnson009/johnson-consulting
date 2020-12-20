@@ -49,7 +49,7 @@ table {
 
 html {
 	font-size: 20px; 
-	font-weight: 400; 
+	font-weight: 200; 
 	font-family: 'Open Sans', sans-serif;
 	box-sizing: border-box;
 	text-rendering: optimizeLegibility;
@@ -169,7 +169,8 @@ html {
 	--facebook: #3b5998; 
 	--instagram: #c32aa3;
 	--github: whitesmoke;
-	--linkedIn: #0a66c2;
+	--linkedIn: rgb(10, 102, 194);
+	--navbar-white: #eee; 
 }
 
 .general-row {
@@ -219,6 +220,13 @@ html {
 	margin-top: 4%;
 	padding-bottom: 3px;
 	border-bottom: 2px solid var(--yellow);
+}
+
+.grey-background {
+	background-color: (var(--yellow), 0.1);
+	padding: .25rem .5rem; 
+	border-radius: 1rem; 
+	margin: 0 auto; 
 }
 
                             /* FOOTER SECTION */

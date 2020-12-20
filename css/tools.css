@@ -2,12 +2,18 @@
 .tools-container {
     width: 95vw;
     margin: 0 auto; 
+    padding: 1rem 0; 
 }
 
 .tools {
-    
+    text-align: center;
+    padding: 1rem 0; 
+    margin: 1rem 0;
+    border: .05rem solid var(--yellow);
+    border-radius: 1rem;
+    background-color: white; 
 }
-
+/* 
 .tools-info {
 
 }
@@ -18,16 +24,66 @@
 
 .tools-text {
 
-}
+} */
 
 .tools-buttons {
 
 }
 
 .tools-buttons button {
+    background: var(--yellow);
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1;
+    margin: 18px;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+    outline:none;
+    position:relative;
+    top:0;
+    border-radius: 1rem;
+    box-shadow: 0 3px 0 #f9b629;
+    text-shadow:0 1px 1px rgba(0, 0, 0, 0.5);
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -ms-transition: all 0.2s ease-in-out 0s;
+     transition: all 0.2s ease-in-out 0s;
+}
+
+.tools-buttons button:hover {
+    background: var(--yellow);    
+    box-shadow: none;
+    color: var(--navbar-black); 
+}
+
+.tools-buttons button:active, .tools-buttons button:focus {
+    background: var(--yellow);    
+    box-shadow: none;
+    color: var(--navbar-black); 
+}
+
+.tools-buttons button a:visited, 
+.tools-buttons button a:link {
+    text-decoration: none;
+    color: var(--navbar-black);
 
 }
 
-.tools-buttons button a {
-
+.general-row-plus {
+    margin: 0 auto; 
+	text-align: center;
+	justify-content: space-around;
+	align-content: center;
+	padding-top: 4%;
+	padding-bottom: 4%;
+	padding-left: 3%;
+	padding-right: 3%;
+	line-height: 25px;
+	text-align: justify;
+  	text-justify: inter-word;
 }

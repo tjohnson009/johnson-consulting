@@ -29,6 +29,7 @@
     width: 20rem; 
     height: auto; 
     padding: 3%; 
+    border-radius: 10%;
 }
 
 .EQ-Span {
@@ -48,6 +49,6 @@
 }
 
 #about-page-title {
-    margin-bottom: 1rem; 
+    margin-bottom: 2rem; 
 }
 
