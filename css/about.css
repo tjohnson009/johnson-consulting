@@ -32,9 +32,17 @@
     border-radius: 10%;
 }
 
-.EQ-Span {
+.EQ-Span a, .EQ-Span a:visited, .EQ-Span a:link {
+    color: var(--navbar-black); 
     display: inline-block;
+    text-decoration: underline;
 }
+
+.EQ-Span a:hover, .EQ-Span a:active {
+    color: var(--yellow);
+    text-decoration: underline;
+}
+
 
 .about-principles {
     width: 85%; 

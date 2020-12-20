@@ -1,7 +1,7 @@
 function insertNav() {
     const navHTML = `
           <!-- NAV BAR -->
-      <nav class="navbar">
+      <nav class="navbar" id='navbar'>
         <div id="logo">
           <a href="homepage.html">
             <img

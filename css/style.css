@@ -163,7 +163,7 @@ html {
 }
 
 :root {
-	--yellow: #ffc600;
+	--yellow: rgb(255, 198, 0);
 	--navbar-black: #111; 
 	--twitter: #1da1f2; 
 	--facebook: #3b5998; 
@@ -243,7 +243,7 @@ html {
 	background-color: #6f6f6f;
 	height: 4.5rem; 
     color: var(--navbar-black); 
-    font-size: .75rem;
+	font-size: .75rem;
 }   
 
 .social-media {

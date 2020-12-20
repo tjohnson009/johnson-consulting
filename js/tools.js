@@ -13,6 +13,14 @@ p.forEach((el) => {
       el.classList.add("general-row-plus");
     });
 
-insertElement('afterbegin','main' ,`<div class='generic-title-div' id='about-page-title'><h2 class="generic-title">The Johnson COnsulting Toolbox</h2></div>`);
+insertElement('afterbegin','main' ,`<div class='generic-title-div' id='about-page-title'><h2 class="generic-title">The Johnson Consulting Toolbox</h2></div>`);
 
-document.querySelector()
+//link the I want buttons to the get started page
+
+let buttons = Array.from(document.querySelectorAll('.i-want')); 
+
+buttons.forEach(el => {
+  el.insertAdjacentHTML("afterbegin",
+    `<a href="../html/get-started.html">I want to take this assessment!</a>`
+  );
+}); 

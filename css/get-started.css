@@ -1,0 +1,58 @@
+/* FORM STYLING  */
+
+		html {
+			height: 100%;
+            background-position: center;
+            background-image: url('../img/kobu-agency-7okkFhxrxNw-unsplash.jpg');
+			background-repeat: no-repeat;
+			background-color: rgba(255, 200, 0, 0.331);
+			background-size: cover;
+			background-blend-mode: overlay;
+			backdrop-filter: blur(10px);
+		}
+
+		h1 {
+			text-align: center;
+			filter: blur(0px);
+		}
+
+		header {
+			background-color: rgba(240, 248, 255, 0.85);
+			padding-bottom: 1vh;
+			padding-top: 1vh;
+			width: 50vw;
+			text-align: center; 
+			margin: 0 auto; 
+			margin-bottom: 1vh;
+		}
+
+		#description {
+			text-align: center;
+        }
+
+		#survey-form {
+            max-width: 70%;
+            height: 80%; 
+			height: auto;
+            margin: 0 auto;
+			text-align: center;
+			background-color: rgba(54, 54, 54, 0.808);
+			padding-top: 1vh;
+			padding-bottom: 1vh;
+        }
+        
+        #survey-form input {
+            width: 30%; 
+        }
+        #survey-form input[type='radio'] {
+            width: 2%; 
+        }
+
+#survey-form #submit, #survey-form #reset {
+            width: 12%; 
+        }
+
+.homepage-footer {
+            height: 6rem; 
+
+        }
