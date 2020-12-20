@@ -13,22 +13,6 @@
     border-radius: 1rem;
     background-color: var(--navbar-white); 
 }
-/* 
-.tools-info {
-
-}
-
-.tools-video {
-
-}
-
-.tools-text {
-
-} */
-
-.tools-buttons {
-
-}
 
 .tools-buttons button {
     background: var(--yellow);
